@@ -53,6 +53,11 @@ button {
     border: none;
 }
 
+button:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
 footer {
     min-height: 50vh;
     display: flex;
@@ -130,5 +135,47 @@ a {
         font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 200;
+    }
+
+        input {
+        width: 12rem;
+        height: 2.3rem;
+        border: 0.8px solid black;
+        padding: 0 0.7rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+        width: 3.6rem;
+        height: 2.3rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: aliceblue;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    footer {
+        min-height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+        padding-bottom: 1rem;
+        color: #f9f9f9;;
+    }
+
+    .link {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    footer {
+        min-height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+        padding-bottom: 2rem;
+        color: #f9f9f9;;
     }
 }
