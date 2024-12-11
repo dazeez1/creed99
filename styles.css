@@ -165,7 +165,6 @@ a {
 
     .link {
         display: flex;
-        gap: 0.5rem;
-        width: 7rem;
+        gap: 0.3rem;
     }
 }
