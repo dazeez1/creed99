@@ -15,7 +15,7 @@
             <div>
                 <!-- Wrap input and button in a form element -->
                 <form id="email-form">
-                    <input type="email" id="email-input" placeholder="Enter your email" required />
+                    <input type="email" name="email" id="email-input" placeholder="Enter your email" required />
                     <button id="submit-btn" type="submit">Submit</button>
                 </form>
             </div>
@@ -32,6 +32,36 @@
         </div>
     </footer>
 
+    <script>
+      const scriptURL =                       
+      "https://script.google.com/macros/s/AKfycbyLlexvUgbxLf4fFUbQJ7O2KiA-aKfRgwf5S7rj_idbZYw_omfe9G7S9HNapF1PAP0dYA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        var formData = new FormData(form);
+        var ex = document.getElementById("ex").checked;
+        var age = document.getElementById("age").checked;
+
+        if (age) {
+          formData.append("age", "Yes");
+        } else {
+          formData.append("age", "No");
+        }
+        if (ex) {
+          formData.append("ex", "Yes");
+        } else {
+          formData.append("ex", "No");
+        }
+
+        fetch(scriptURL, { method: "POST", body: formData })
+          .then((response) => {
+            swal("Done", "Submitted Successfully.", "success");
+          })
+          .catch((error) => {
+            swal("Error", "Something went wrong. please try again!", "error");
+          });
+      });
+    </script>    
     <script src="script.js"></script>
 </body>
 </html>
