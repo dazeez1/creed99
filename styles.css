@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; 
+    background-color: grey;
+}
+
+footer,
+header {
+    max-width: 200rem;
+    padding: 0 2rem;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    padding-top: 10rem;
+}
+
+.header-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+input {
+    width: 15rem;
+    height: 2rem;
+    border: 0.8px solid black;
+    padding: 0 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    padding-bottom: 0.5rem;
+    color: #f9f9f9;;
+}
+
+#live-time {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.fa-cross {
+    color: black;
+}
+
+a {
+    color: #f9f9f9;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.fa-instagram:hover {
+    color: #E1306C;
+}
+
+.fa-x-twitter:hover {
+    color: black;
+}
+
+.fa-whatsapp:hover {
+    color: #25D366;
+} 
+
+@media (max-width: 650px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50%;
+        padding-top: 18rem;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        font-size: 0.8rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    #live-time {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        /* text-align: center; */
+    }
+
+    a {
+        color: #f9f9f9;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+    }
+}
